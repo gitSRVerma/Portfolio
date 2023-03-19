@@ -1,0 +1,289 @@
+.works {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-top: 4rem;
+
+  /* scroll */
+  align-items: center;
+}
+
+/* left side */
+.awesome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.awesome> :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.awesome> :nth-child(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.awesome> :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 4rem;
+}
+
+/* right side */
+.w-right {
+  position: relative;
+}
+
+.w-mainCircle {
+  left: 9rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  /* box-shadow: var(--smboxShadow); */
+  box-shadow: -25px -25px 30px rgb(218, 159, 241);
+  top: 2rem;
+  background: white;
+  /* darkMode */
+  z-index: 2;
+}
+
+.w-mainCircle>* {
+  position: absolute;
+}
+
+.w-mainCircle> :nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
+
+
+.w-mainCircle> :nth-child(2) {
+  left: -3rem;
+  top: 5rem;
+}
+
+.w-mainCircle> :nth-child(3) {
+  left: 6rem;
+  top: 5rem;
+}
+
+.w-mainCircle> :nth-child(4) {
+  left: 15rem;
+  top: 5rem;
+}
+
+.w-mainCircle> :nth-child(5) {
+  left: 6rem;
+  top: 13rem;
+}
+
+.w-mainCircle> :nth-child(6) {
+  left: 1.8rem;
+  top: 1rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.w-mainCircle> :nth-child(7) {
+  left: 11.5rem;
+  top: 1rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.w-mainCircle> :nth-child(8) {
+  left: 1.5rem;
+  top: 9rem;
+  /* height: 0.1rem;
+  width: 0.1rem; */
+  transform: scale(0.8);
+}
+
+.w-mainCircle> :nth-child(9) {
+  left: 11.5rem;
+  top: 9.8rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.w-mainCircle> :nth-child(10) {
+  left: -3rem;
+  top: -2rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.w-mainCircle> :nth-child(11) {
+  left: 17rem;
+  top: -2rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.w-mainCircle> :nth-child(12) {
+  /* python */
+  left: -3rem;
+  top: 14rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.w-mainCircle> :nth-child(13) {
+  /* Blockchain */
+  left: 16.2rem;
+  top: 13rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+/* ..................................................................................... */
+
+
+.tooltiptext13 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip13:hover .tooltiptext13 {
+  visibility: visible;
+  top: 40px;
+  left: 80%;
+}
+
+/* .................................................................................................. */
+
+
+.w-mainCircle> :nth-child(14) {
+  /* Expressjs */
+  left: 23rem;
+  top: 6rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+
+.w-secCircle {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: "none";
+  box-shadow: var(--smboxShadow);
+  background: white;
+}
+
+.w-secCircle>img {
+  transform: scale(1.3);
+}
+
+/* .w-secCircle {
+  font-size: 0.1%;
+} */
+
+.w-backCircle {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  /* darkMode */
+  z-index: 1;
+}
+
+.blueCircle {
+  background: #B3FFAE;
+  left: 20rem;
+  top: 0rem;
+}
+
+.yellowCircle {
+  background: #F0FF42;
+  left: 20rem;
+  top: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+  .works {
+    flex-direction: column;
+    height: 55rem;
+    padding: 0;
+    gap: 5rem;
+  }
+
+  .w-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    transform: scale(0.7);
+  }
+
+  .w-mainCircle {
+    position: static;
+  }
+
+  .w-backCircle {
+    left: 8rem !important;
+  }
+
+}
+
+.skill-title {
+  color: black;
+  margin-bottom: 1%;
+  font-size: 23px;
+  /* padding-top: 10%; */
+}
+
+.skill-desc {
+  padding-left: 7%;
+  font-size: 17px;
+  padding-bottom: 1%;
+  color: gray;
+}
+
+.exp-section {
+  margin-top: 5%;
+}
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  white-space: nowrap;
+}
